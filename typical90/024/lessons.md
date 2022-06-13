@@ -1,0 +1,4 @@
+- この問題の焦点は偶数 or 奇数。これをパリティという
+- 絶対値の取得は以下
+  - int は`#include <cstdlib>`で`std:abs()`
+  - float は`#include <cmath>`で`std:fabs()`
