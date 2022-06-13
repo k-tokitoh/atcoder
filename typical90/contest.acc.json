@@ -9,11 +9,7 @@
       "id": "typical90_a",
       "label": "001",
       "title": "Yokan Party（★4）",
-      "url": "https://atcoder.jp/contests/typical90/tasks/typical90_a",
-      "directory": {
-        "path": "001",
-        "testdir": "tests"
-      }
+      "url": "https://atcoder.jp/contests/typical90/tasks/typical90_a"
     },
     {
       "id": "typical90_b",
@@ -151,7 +147,11 @@
       "id": "typical90_v",
       "label": "022",
       "title": "Cubic Cake（★2）",
-      "url": "https://atcoder.jp/contests/typical90/tasks/typical90_v"
+      "url": "https://atcoder.jp/contests/typical90/tasks/typical90_v",
+      "directory": {
+        "path": "022",
+        "testdir": "tests"
+      }
     },
     {
       "id": "typical90_w",
