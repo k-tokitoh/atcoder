@@ -8,8 +8,8 @@
 ```
 oj login -u "USER_NAME" -p "PASSWORD" "https://atcoder.jp/"
 acc new CONTEST_ID
-acc add
 cd CONTEST_ID
+acc add
 touch main.cpp
 g++ main.cpp && oj t -d tests
 acc submit main.cpp
