@@ -11,6 +11,6 @@ acc new CONTEST_ID
 cd CONTEST_ID
 acc add
 touch main.cpp
-g++ main.cpp && oj t -d tests
+g++ -std=gnu++17 main.cpp && oj t -d tests
 acc submit main.cpp
 ```
