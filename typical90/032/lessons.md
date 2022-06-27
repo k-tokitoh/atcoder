@@ -8,3 +8,16 @@
 
 set< int >s = {1,2,3};
 ```
+
+- 順列は以下で
+
+```cpp
+#include <algorithm>
+#include <vector>
+
+vector< int >v = {1,2,3};
+
+do {
+  // whatever
+} while (next_permutation(v.begin(), v.end()));
+```
