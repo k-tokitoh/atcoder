@@ -7,7 +7,7 @@
       "macFrameworkPath": [],
       "compilerPath": "/usr/local/bin/g++",
       "cStandard": "gnu17",
-      "cppStandard": "gnu++17",
+      "cppStandard": "gnu++14",
       "intelliSenseMode": "macos-gcc-x64"
     }
   ],

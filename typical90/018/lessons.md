@@ -1,0 +1,5 @@
+- ふつうに数学 & 小数の扱い方の問題だった
+- 演算するときはもう一方の数も整数なら long long, 小数なら long double にしときゃ間違いない
+  - リテラルなら`9L`, `9.9L`のように書く
+- 桁数を指定するのは基本 printf でやるのがよさそう
+  - int は`%d`, long long は`%lld`, float は`%f`, double は`%lf`, long double は`%Ld`
