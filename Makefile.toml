@@ -7,7 +7,7 @@ cp -r config/* `acc config-dir`
 [tasks.add]
 script = ['''
 #!/usr/bin/env bash
-cd ${1}
+cd contests/${1}
 acc add --template cpp
 ''']
 
@@ -15,13 +15,13 @@ acc add --template cpp
 clear = true
 script = ['''
 #!/usr/bin/env bash
-cd ${1}
+cd contests/${1}
 g++ -std=gnu++17 main.cpp && oj t -d tests
 ''']
 
 [tasks.submit]
 script = ['''
 #!/usr/bin/env bash
-cd ${1}
+cd contests/${1}
 acc submit main.cpp -- -y
 ''']
