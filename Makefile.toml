@@ -1,0 +1,27 @@
+[tasks.init]
+script = ['''
+#!/usr/bin/env bash
+cp -r config/* `acc config-dir`
+''']
+
+[tasks.add]
+script = ['''
+#!/usr/bin/env bash
+cd ${1}
+acc add --template cpp
+''']
+
+[tasks.test]
+clear = true
+script = ['''
+#!/usr/bin/env bash
+cd ${1}
+g++ -std=gnu++17 main.cpp && oj t -d tests
+''']
+
+[tasks.submit]
+script = ['''
+#!/usr/bin/env bash
+cd ${1}
+acc submit main.cpp -- -y
+''']
