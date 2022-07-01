@@ -9,7 +9,7 @@
 ```sh
 cargo make init
 oj login -u "USER_NAME" -p "PASSWORD" "https://atcoder.jp/"
-acc new CONTEST_ID
+cargo make new CONTEST_ID
 cargo make add CONTEST_ID
 cargo make test CONTEST_ID/TASK_ID
 cargo make submit CONTEST_ID/TASK_ID

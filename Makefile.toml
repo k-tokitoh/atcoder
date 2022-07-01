@@ -4,6 +4,13 @@ script = ['''
 cp -r config/* `acc config-dir`
 ''']
 
+[tasks.new]
+script = ['''
+#!/usr/bin/env bash
+cd contests/
+acc new ${1} --choice none
+''']
+
 [tasks.add]
 script = ['''
 #!/usr/bin/env bash
