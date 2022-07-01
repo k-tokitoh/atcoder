@@ -4,6 +4,12 @@ script = ['''
 cp -r config/* `acc config-dir`
 ''']
 
+[tasks.login]
+script = ['''
+#!/usr/bin/env bash
+oj login -u "${1}" -p "${2}" "https://atcoder.jp/"
+''']
+
 [tasks.new]
 script = ['''
 #!/usr/bin/env bash
@@ -31,4 +37,11 @@ script = ['''
 #!/usr/bin/env bash
 cd contests/${1}
 acc submit main.cpp -- -y
+''']
+
+[tasks.count]
+script = ['''
+#!/usr/bin/env bash
+cd contests/${1}
+echo $((`ls -l | wc -l` -1))  # exclude contest.acc.json
 ''']

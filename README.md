@@ -8,13 +8,10 @@
 
 ```sh
 cargo make init
-oj login -u "USER_NAME" -p "PASSWORD" "https://atcoder.jp/"
+cargo make login "USER_NAME" "PASSWORD"
 cargo make new CONTEST_ID
 cargo make add CONTEST_ID
 cargo make test CONTEST_ID/TASK_ID
 cargo make submit CONTEST_ID/TASK_ID
-
-## count solved provlems
-cd CONTEST_ID
-echo $((`ls -l | wc -l` -1))  # exclude contest.acc.json
+cargo make count CONTEST_ID
 ```
