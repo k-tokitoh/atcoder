@@ -1,0 +1,5 @@
+- union find の考え方は[こちらのスライド](https://atcoder.jp/contests/atc001/tasks/unionfind_a)で理解した
+- 論理的には木構造、実装としては配列、というのが初めてわかった
+- コンストラクタでメンバのオブジェクトを必要とするときは、引数の後ろに`: member_1(construct_args_1), member_2(construct_args_2)`と記述する
+  - これらひとつひとつをメンバ初期化子、全体をコンストラクタ初期化子と呼ぶ
+  - 今回の例では、parents というメンバに関して、`vector<long long>`のコンストラクタに引数`n`を渡したいので、`: parents(n)`と記述する
