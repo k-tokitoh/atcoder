@@ -29,7 +29,7 @@ clear = true
 script = ['''
 #!/usr/bin/env bash
 cd contests/${1}
-g++ -std=gnu++17 main.cpp && oj t -d tests
+g++ -std=gnu++17 main.cpp && oj t -d tests -M all
 ''']
 
 [tasks.submit]
@@ -45,3 +45,12 @@ script = ['''
 cd contests/${1}
 echo $((`ls -l | wc -l` -1))  # exclude contest.acc.json
 ''']
+
+[tasks.lessons]
+script = [
+  '''
+#!/usr/bin/env bash
+rm all_lessons.md
+find ./contests -name lessons.md | xargs -I{} sh -c 'echo {} | sed -e "s|./contests/||" -e "s|/lessons.md||" -e "s|^|# |"  >> ./all_lessons.md && echo >> all_lessons.md && cat {} >> ./all_lessons.md'
+''',
+]
